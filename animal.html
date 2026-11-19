@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Animal Safari</title>
+
+    <!-- Bootstrap 4.3.1 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style>
+        body {
+            position: relative;
+        }
+
+        .carousel-item img {
+            height: 350px;
+            object-fit: cover;
+        }
+
+        section {
+            padding: 60px 20px;
+            min-height: 250px;
+        }
+
+        #forest {
+            background-color: #d4edda;
+        }
+
+        #ocean {
+            background-color: #d1ecf1;
+        }
+
+        #desert {
+            background-color: #fff3cd;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#safariNavbar" data-offset="70">
+
+    <div class="container-fluid mt-3">
+        <h1 class="text-center text-success">My Animal Safari</h1>
+
+        <!-- Bootstrap Carousel -->
+        <div id="habitatCarousel" class="carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#habitatCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#habitatCarousel" data-slide-to="1"></li>
+                <li data-target="#habitatCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200" class="d-block w-100"
+                        alt="Green forest">
+                    <div class="carousel-caption">
+                        <h3>Forest Habitat</h3>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1200" class="d-block w-100"
+                        alt="Ocean">
+                    <div class="carousel-caption">
+                        <h3>Ocean Habitat</h3>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=1200" class="d-block w-100"
+                        alt="Desert">
+                    <div class="carousel-caption">
+                        <h3>Desert Habitat</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Previous and Next Controls -->
+            <a class="carousel-control-prev" href="#habitatCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+
+            <a class="carousel-control-next" href="#habitatCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Scrollspy Navigation Bar -->
+    <nav id="safariNavbar" class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+
+        <a class="navbar-brand" href="#">Animal Safari</a>
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#forest">Forest</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#ocean">Ocean</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#desert">Desert</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Habitat Sections -->
+    <section id="forest">
+        <div class="container">
+            <h2 class="text-success">Forest Animals</h2>
+            <p>
+                Forests are home to many animals, including tigers,
+                elephants, monkeys, deer and colourful birds.
+                These animals live among trees and plants.
+            </p>
+        </div>
+    </section>
+
+    <section id="ocean">
+        <div class="container">
+            <h2 class="text-primary">Ocean Animals</h2>
+            <p>
+                Oceans are home to amazing creatures such as dolphins,
+                whales, sharks, sea turtles and colourful fish.
+                They live in salt water.
+            </p>
+        </div>
+    </section>
+
+    <section id="desert">
+        <div class="container">
+            <h2 class="text-warning">Desert Animals</h2>
+            <p>
+                Deserts are dry habitats where animals such as camels,
+                snakes, lizards and desert foxes survive with very
+                little water.
+            </p>
+        </div>
+    </section>
+
+    <!-- jQuery, Popper.js and Bootstrap 4.3.1 JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
